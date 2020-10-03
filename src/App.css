@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+.main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.game {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.choices {
+    display: flex;
+    flex-direction: row;
+    width: 350px;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    margin-top: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.choice {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-size: cover;
+    background-image: url('./img/question.png');
+    background-position: center;
 }
 
-.App-link {
-  color: #61dafb;
+.choice-rock {
+    background-image: url('./img/rock.jpg');
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.choice-paper {
+    background-image: url('./img/paper.jpg');
+}
+
+.choice-scissors {
+    background-image: url('./img/scissors.jpg');
+}
+
+.choice-img {
+    max-width: 100%;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.computer-choice {
+    display: flex;
+}
+
+.score-board {
+    font-size: 40px;
+    margin-top: 50px;
+}
+
+.result-window {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.final-phrase {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.reset-button {
+    font-size: 20px;
+}
+
+.result {
+    font-size: 20px;
+}
+
+.phrase {
+    margin-top: 30px;
+    font-size: 30px;
 }
