@@ -19,11 +19,11 @@ const Game = ({ score }) => {
             {
                 !isGameEnd() ?
                     <>
-                        <Choices />
-                        <ComputerChoice />
-                        <ScoreBoard />
                         <Result />
                         <Phrases />
+                        <ScoreBoard />
+                        <ComputerChoice />
+                        <Choices />
                     </> :
                     <ResultWindow />
             }
